@@ -4,9 +4,9 @@ document.getElementById('adicionar').addEventListener('click', function() {
 
     const disciplinaContainer = document.getElementById('disciplinas');
 
-    // Verifica se já existem 5 disciplinas
-    if (document.querySelectorAll('.disciplina').length >= 5) {
-        alert('Você já adicionou o máximo de 5 disciplinas.');
+    // Verifica se já existem 10 disciplinas
+    if (document.querySelectorAll('.disciplina').length >= 10) {
+        alert('Você já adicionou o máximo de 10 disciplinas.');
         return;
     }
 
