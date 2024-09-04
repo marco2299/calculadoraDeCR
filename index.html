@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de CR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome para ícones -->
 </head>
 <body>
     <div class="container">
         <h1>Calculadora de CR</h1>
         <div id="disciplinas">
             <div class="disciplina">
-                <input type="number" placeholder="Créditos" class="creditos" min="1" required>
-                <input type="number" placeholder="Nota" class="nota" step="0.1" min="0" max="10" required>
+                <input type="number" placeholder="Quantidade De Créditos" class="creditos" min="1" required>
+                <input type="number" placeholder="Nota Final" class="nota" step="0.1" min="0" max="10" required>
             </div>
         </div>
-        <button id="adicionar">Adicionar Disciplina</button>
+        <button id="adicionar">Adicionar Nova Disciplina</button>
         <button id="calcular">Calcular CR</button>
+        <button id="limpar">Limpar</button>
         <h2>Seu CR: <span id="resultado">0.00</span></h2>
     </div>
+
+    <footer>
+        <i class="fab fa-instagram"></i> <span>2m_035</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>

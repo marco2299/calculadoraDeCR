@@ -1,0 +1,141 @@
+/* Reset de estilos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Cor de fundo mais suave */
+    display: flex;
+    flex-direction: column; /* Alterado para coluna */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo do container principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+    width: 100%;
+    max-width: 500px; /* Largura máxima para um layout responsivo */
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+/* Estilo do título */
+h1 {
+    margin-bottom: 20px;
+    color: #333; /* Cor de texto escura */
+}
+
+/* Estilo dos campos de disciplina */
+.disciplina {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo dos inputs */
+input[type="number"] {
+    flex: 1; /* Flex para que os inputs se ajustem ao espaço */
+    padding: 12px;
+    border: 1px solid #ddd; /* Bordas suaves */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s; /* Transição suave na borda */
+}
+
+/* Estilo dos inputs em foco */
+input[type="number"]:focus {
+    border-color: #007bff; /* Cor de borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo dos botões */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6c757d; /* Cor de fundo dos botões */
+    color: #ffffff; /* Cor do texto dos botões */
+    border: none;
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s; /* Transição suave no hover */
+}
+
+/* Efeito hover nos botões */
+button:hover {
+    background-color: #676767; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo dos botões em uma linha */
+#calcular {
+    width: calc(50% - 5px);
+   background-color: #007bff;
+}
+
+#limpar {
+    width: calc(50% - 5px);
+    background-color: #fd7e14;
+}
+
+/* Estilo do resultado */
+h2 {
+    margin-top: 20px;
+    color: #333; /* Cor de texto escura */
+}
+
+#resultado {
+    font-weight: bold;
+    color: #007bff; /* Destaque para o resultado */
+    font-size: 1.5em; /* Tamanho da fonte aumentado */
+}
+
+/* Estilo do rodapé */
+footer {
+    margin-top: 20px; /* Espaçamento superior */
+    color: #666;
+    text-align: center;
+}
+
+/* Estilo do ícone do Instagram */
+footer i {
+    font-size: 24px;
+    color: #333;
+    margin-right: 8px;
+}
+
+footer span {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    input[type="number"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
