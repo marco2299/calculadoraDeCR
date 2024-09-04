@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de CR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de CR</h1>
+        <div id="disciplinas">
+            <div class="disciplina">
+                <input type="number" placeholder="Créditos" class="creditos" min="1" required>
+                <input type="number" placeholder="Nota" class="nota" step="0.1" min="0" max="10" required>
+            </div>
+        </div>
+        <button id="adicionar">Adicionar Disciplina</button>
+        <button id="calcular">Calcular CR</button>
+        <h2>Seu CR: <span id="resultado">0.00</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
