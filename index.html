@@ -17,20 +17,20 @@
 
   <body>
     <div class="container">
-      <h1>Calculadora de CR</h1>
+      <h1>Calculadora de CRA</h1>
 
       <!-- Seletor de modo -->
       <div class="modo">
         <label for="modo">Modo de cálculo:</label>
         <select id="modo">
           <option value="periodo" selected>
-            CR do Período (por disciplinas)
+            CRA do Período (por disciplinas)
           </option>
-          <option value="geral">CR Geral (por períodos)</option>
+          <option value="geral">CRA Geral (por períodos)</option>
         </select>
       </div>
 
-      <!-- ====== SEÇÃO: CR DO PERÍODO (DISCIPLINAS) ====== -->
+      <!-- ====== SEÇÃO: CRA DO PERÍODO (DISCIPLINAS) ====== -->
       <div id="sec-periodo">
         <p class="ajuda">
           Preencha as <strong>disciplinas do período</strong>. Em cada linha,
@@ -73,11 +73,11 @@
         <button id="adicionar" type="button">Adicionar Nova Disciplina</button>
       </div>
 
-      <!-- ====== SEÇÃO: CR GERAL (PERÍODOS) ====== -->
+      <!-- ====== SEÇÃO: CRA GERAL (PERÍODOS) ====== -->
       <div id="sec-geral" class="hidden">
         <p class="ajuda">
-          Aqui você calcula o <strong>CR Geral</strong> a partir dos
-          <strong>CRs de cada período</strong> (média ponderada). <br /><br />
+          Aqui você calcula o <strong>CRA Geral</strong> a partir dos
+          <strong>CRAs de cada período</strong> (média ponderada). <br /><br />
           Em cada linha:
           <br />
           <strong>Período</strong>: ex. <code>2024/2</code>
@@ -88,7 +88,7 @@
           Ex: Banco de dados: 4, Grafos: 6, Redes: 4 ⇒
           <strong>Total = 14</strong>
           <br />
-          <strong>CR do Período</strong>: o valor final que obteve naquele
+          <strong>CRA do Período</strong>: o valor final que obteve naquele
           período (ex: 68,91).
         </p>
 
@@ -140,7 +140,7 @@
         <button id="limpar" type="button">Limpar</button>
       </div>
 
-      <h2 id="tituloResultado">Seu CR: <span id="resultado">0.00</span></h2>
+      <h2 id="tituloResultado">Seu CRA: <span id="resultado">0.00</span></h2>
     </div>
 
     <footer class="footer">
