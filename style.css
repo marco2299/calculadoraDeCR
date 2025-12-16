@@ -1,0 +1,260 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+
+  /* Melhor para responsivo: não “corta” conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  padding: 20px;
+  gap: 14px;
+}
+
+/* Container principal */
+.container {
+  background-color: #ffffff;
+  padding: 26px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+
+  /* Garante que nada “vaze” visualmente */
+  overflow: hidden;
+}
+
+/* Título */
+h1 {
+  margin-bottom: 16px;
+  color: #333;
+}
+
+/* Seletor de modo */
+.modo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  color: #333;
+}
+
+.modo label {
+  font-weight: 500;
+}
+
+.modo select {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Texto de ajuda */
+.ajuda {
+  text-align: left;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px 12px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.35;
+  margin: 10px 0 12px;
+}
+
+.ajuda code {
+  background: #eef2ff;
+  border: 1px solid #dbeafe;
+  padding: 1px 6px;
+  border-radius: 8px;
+}
+
+/* Lista de linhas */
+.lista {
+  width: 100%;
+}
+
+/* Linha (disciplina/período) */
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+
+  /* Importante: evita ficar “pra fora” */
+  flex-wrap: wrap;
+}
+
+/* Inputs */
+input[type="number"],
+input[type="text"] {
+  flex: 1 1 180px; /* quebra bem */
+  min-width: 160px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="number"]:focus,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Botão excluir */
+.excluir {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  background-color: #dc3545;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.excluir:hover {
+  background-color: #c82333;
+}
+.excluir i {
+  font-size: 16px;
+}
+
+/* Botões padrão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c757d;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #676767;
+}
+
+/* Ações (Calcular/Limpar) */
+.acoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+#calcular {
+  width: 50%;
+  background-color: #007bff;
+}
+
+#limpar {
+  width: 50%;
+  background-color: #fd7e14;
+}
+
+/* Resultado */
+h2 {
+  margin-top: 16px;
+  color: #333;
+}
+
+#resultado {
+  font-weight: bold;
+  color: #007bff;
+  font-size: 1.5em;
+}
+
+/* Footer LinkedIn */
+.footer {
+  width: 100%;
+  max-width: 680px;
+  text-align: center;
+}
+
+.footerLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.footerLink:hover {
+  background: #f8fafc;
+}
+
+.footerLink i {
+  font-size: 22px;
+  color: #0a66c2; /* azul LinkedIn */
+}
+
+/* Helpers */
+.hidden {
+  display: none;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .container {
+    padding: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  input[type="number"],
+  input[type="text"] {
+    font-size: 14px;
+    padding: 10px;
+    min-width: 140px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  /* Botão excluir ocupa linha inteira quando apertado */
+  .excluir {
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;
+  }
+
+  .acoes {
+    flex-direction: column;
+  }
+
+  #calcular,
+  #limpar {
+    width: 100%;
+  }
+}
